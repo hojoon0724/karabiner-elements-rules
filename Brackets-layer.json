@@ -1,5 +1,5 @@
 {
-  "description": "brackets layer",
+  "description": "Brackets layer",
   "manipulators": [
     {
       "conditions": [
@@ -88,7 +88,6 @@
       ],
       "type": "basic"
     },
-
     {
       "conditions": [
         {
@@ -154,7 +153,6 @@
       ],
       "type": "basic"
     },
-
     {
       "conditions": [
         {
@@ -199,7 +197,6 @@
       ],
       "type": "basic"
     },
-
     {
       "conditions": [
         {
@@ -242,13 +239,20 @@
       ],
       "type": "basic"
     },
-
     {
       "from": {
         "key_code": "quote",
         "modifiers": {
           "optional": ["any"]
         }
+      },
+      "to_delayed_action": {
+        "to_if_canceled": [
+          {
+            "key_code": "quote",
+            "modifiers": []
+          }
+        ]
       },
       "to": [
         {
