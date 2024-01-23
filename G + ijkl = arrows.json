@@ -144,6 +144,14 @@
           }
         }
       ],
+      "to_delayed_action": {
+        "to_if_canceled": [
+          {
+            "key_code": "g",
+            "modifiers": []
+          }
+        ]
+      },
       "to_after_key_up": [
         {
           "set_variable": {
