@@ -1,5 +1,5 @@
 {
-  "description": "G + ijkl = arrows",
+  "description": "G + ijkl = arrows (enhanced)",
   "manipulators": [
     {
       "conditions": [
@@ -130,13 +130,58 @@
       "type": "basic"
     },
     {
+      "conditions": [
+        {
+          "name": "g pressed",
+          "type": "variable_if",
+          "value": 1
+        }
+      ],
+      "from": {
+        "key_code": "u",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "hyphen",
+          "modifiers": ["left_command", "left_shift"]
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "conditions": [
+        {
+          "name": "g pressed",
+          "type": "variable_if",
+          "value": 1
+        }
+      ],
+      "from": {
+        "key_code": "o",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "equal_sign",
+          "modifiers": ["left_command", "left_shift"]
+        }
+      ],
+      "type": "basic"
+    },
+
+    {
       "from": {
         "key_code": "g",
         "modifiers": {
           "optional": ["any"]
         }
       },
-      "to": [
+      "to_if_held_down": [
         {
           "set_variable": {
             "name": "g pressed",
@@ -145,10 +190,12 @@
         }
       ],
       "to_delayed_action": {
-        "to_if_canceled": [
+        "to_if_invoked": [
           {
-            "key_code": "g",
-            "modifiers": []
+            "set_variable": {
+              "name": "command-q",
+              "value": 0
+            }
           }
         ]
       },
