@@ -246,14 +246,6 @@
           "optional": ["any"]
         }
       },
-      "to_delayed_action": {
-        "to_if_canceled": [
-          {
-            "key_code": "quote",
-            "modifiers": []
-          }
-        ]
-      },
       "to": [
         {
           "set_variable": {
@@ -270,9 +262,26 @@
           }
         }
       ],
+      "to_delayed_action": {
+        "to_if_canceled": [
+          {
+            "set_variable": {
+              "name": "quote pressed",
+              "value": 0
+            }
+          }
+        ]
+      },
       "to_if_alone": [
         {
           "key_code": "quote"
+        },
+        {
+          "halt": true,
+          "set_variable": {
+            "name": "quote pressed",
+            "value": 0
+          }
         }
       ],
       "type": "basic"

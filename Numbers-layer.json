@@ -227,14 +227,6 @@
           }
         }
       ],
-      "to_delayed_action": {
-        "to_if_canceled": [
-          {
-            "key_code": "c",
-            "modifiers": []
-          }
-        ]
-      },
       "to_after_key_up": [
         {
           "set_variable": {
@@ -243,10 +235,26 @@
           }
         }
       ],
+      "to_delayed_action": {
+        "to_if_canceled": [
+          {
+            "set_variable": {
+              "name": "c pressed",
+              "value": 0
+            }
+          }
+        ]
+      },
       "to_if_alone": [
         {
-          "key_code": "c",
-          "modifiers": []
+          "key_code": "c"
+        },
+        {
+          "halt": true,
+          "set_variable": {
+            "name": "c pressed",
+            "value": 0
+          }
         }
       ],
       "type": "basic"
