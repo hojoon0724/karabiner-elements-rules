@@ -19,21 +19,20 @@
       },
       "to_if_alone": [
         {
+          "halt": true,
           "key_code": "a",
-          "modifiers": [],
-          "halt": true
+          "modifiers": []
         }
       ],
       "to_if_held_down": [
         {
+          "halt": true,
           "key_code": "left_shift",
-          "modifiers": ["any"],
-          "halt": true
+          "modifiers": ["any"]
         }
       ],
       "type": "basic"
     },
-
     {
       "description": "S = Control",
       "from": {
@@ -52,21 +51,20 @@
       },
       "to_if_alone": [
         {
+          "halt": true,
           "key_code": "s",
-          "modifiers": [],
-          "halt": true
+          "modifiers": []
         }
       ],
       "to_if_held_down": [
         {
+          "halt": true,
           "key_code": "left_control",
-          "modifiers": ["any"],
-          "halt": true
+          "modifiers": ["any"]
         }
       ],
       "type": "basic"
     },
-
     {
       "description": "D = Option",
       "from": {
@@ -75,7 +73,6 @@
           "optional": ["any"]
         }
       },
-
       "to_delayed_action": {
         "to_if_canceled": [
           {
@@ -86,21 +83,20 @@
       },
       "to_if_alone": [
         {
+          "halt": true,
           "key_code": "d",
-          "modifiers": [],
-          "halt": true
+          "modifiers": []
         }
       ],
       "to_if_held_down": [
         {
+          "halt": true,
           "key_code": "left_option",
-          "modifiers": ["any"],
-          "halt": true
+          "modifiers": ["any"]
         }
       ],
       "type": "basic"
     },
-
     {
       "description": "F = cmd",
       "from": {
@@ -119,21 +115,20 @@
       },
       "to_if_alone": [
         {
+          "halt": true,
           "key_code": "f",
-          "modifiers": [],
-          "halt": true
+          "modifiers": []
         }
       ],
       "to_if_held_down": [
         {
+          "halt": true,
           "key_code": "left_command",
-          "modifiers": ["any"],
-          "halt": true
+          "modifiers": ["any"]
         }
       ],
       "type": "basic"
     },
-
     {
       "description": "J = cmd",
       "from": {
@@ -152,21 +147,20 @@
       },
       "to_if_alone": [
         {
+          "halt": true,
           "key_code": "j",
-          "modifiers": [],
-          "halt": true
+          "modifiers": []
         }
       ],
       "to_if_held_down": [
         {
+          "halt": true,
           "key_code": "right_command",
-          "modifiers": ["any"],
-          "halt": true
+          "modifiers": ["any"]
         }
       ],
       "type": "basic"
     },
-
     {
       "description": "K = option",
       "from": {
@@ -185,21 +179,20 @@
       },
       "to_if_alone": [
         {
+          "halt": true,
           "key_code": "k",
-          "modifiers": [],
-          "halt": true
+          "modifiers": []
         }
       ],
       "to_if_held_down": [
         {
+          "halt": true,
           "key_code": "right_option",
-          "modifiers": ["any"],
-          "halt": true
+          "modifiers": ["any"]
         }
       ],
       "type": "basic"
     },
-
     {
       "description": "L = control",
       "from": {
@@ -218,21 +211,20 @@
       },
       "to_if_alone": [
         {
+          "halt": true,
           "key_code": "l",
-          "modifiers": [],
-          "halt": true
+          "modifiers": []
         }
       ],
       "to_if_held_down": [
         {
+          "halt": true,
           "key_code": "right_control",
-          "modifiers": ["any"],
-          "halt": true
+          "modifiers": ["any"]
         }
       ],
       "type": "basic"
     },
-
     {
       "description": "semicolon = shift",
       "from": {
@@ -251,16 +243,16 @@
       },
       "to_if_alone": [
         {
+          "halt": true,
           "key_code": "semicolon",
-          "modifiers": [],
-          "halt": true
+          "modifiers": []
         }
       ],
       "to_if_held_down": [
         {
+          "halt": true,
           "key_code": "right_shift",
-          "modifiers": ["any"],
-          "halt": true
+          "modifiers": ["any"]
         }
       ],
       "type": "basic"

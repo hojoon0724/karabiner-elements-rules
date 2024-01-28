@@ -12,17 +12,13 @@
       "from": {
         "key_code": "grave_accent_and_tilde",
         "modifiers": {
-          "optional": [
-            "any"
-          ]
+          "optional": ["any"]
         }
       },
       "to": [
         {
           "key_code": "grave_accent_and_tilde",
-          "modifiers": [
-            "left_control"
-          ]
+          "modifiers": ["left_control"]
         }
       ],
       "to_after_key_up": [
@@ -39,9 +35,7 @@
       "from": {
         "key_code": "grave_accent_and_tilde",
         "modifiers": {
-          "optional": [
-            "any"
-          ]
+          "optional": ["any"]
         }
       },
       "parameters": {
