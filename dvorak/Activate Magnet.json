@@ -1,0 +1,27 @@
+{
+  "description": "Activate Magnet - Native Dvorak",
+  "manipulators": [
+    {
+      "from": {
+        "modifiers": {
+          "optional": ["any"]
+        },
+        "simultaneous": [
+          {
+            "key_code": "o"
+          },
+          {
+            "key_code": "e"
+          }
+        ]
+      },
+      "to_if_held_down": [
+        {
+          "key_code": "left_option",
+          "modifiers": "left_control"
+        }
+      ],
+      "type": "basic"
+    }
+  ]
+}

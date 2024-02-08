@@ -1,0 +1,302 @@
+{
+  "description": "Home Row Mods - Native Dvorak",
+  "manipulators": [
+    {
+      "description": "A = Shift",
+      "from": {
+        "key_code": "a",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "parameters": {
+        "basic.to_delayed_action_delay_milliseconds": 50
+      },
+      "to": {
+        "key_code": "left_shift"
+      },
+      "to_delayed_action": {
+        "to_if_canceled": [
+          {
+            "key_code": "a",
+            "modifiers": []
+          }
+        ]
+      },
+      "to_if_alone": [
+        {
+          "halt": true,
+          "key_code": "a",
+          "modifiers": []
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "description": "o = Control",
+      "from": {
+        "key_code": "o",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "parameters": {
+        "basic.to_delayed_action_delay_milliseconds": 50
+      },
+      "to": {
+        "key_code": "left_control"
+      },
+      "to_delayed_action": {
+        "to_if_canceled": [
+          {
+            "key_code": "o",
+            "modifiers": []
+          }
+        ]
+      },
+      "to_if_alone": [
+        {
+          "halt": true,
+          "key_code": "o",
+          "modifiers": []
+        }
+      ],
+      "to_if_held_down": [
+        {
+          "halt": true,
+          "key_code": "left_control",
+          "modifiers": ["any"]
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "description": "e = Option",
+      "from": {
+        "key_code": "e",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "parameters": {
+        "basic.to_delayed_action_delay_milliseconds": 50
+      },
+      "to": {
+        "key_code": "left_option"
+      },
+      "to_delayed_action": {
+        "to_if_canceled": [
+          {
+            "key_code": "e",
+            "modifiers": []
+          }
+        ]
+      },
+      "to_if_alone": [
+        {
+          "halt": true,
+          "key_code": "e",
+          "modifiers": []
+        }
+      ],
+      "to_if_held_down": [
+        {
+          "halt": true,
+          "key_code": "left_option",
+          "modifiers": ["any"]
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "description": "u = cmd",
+      "from": {
+        "key_code": "u",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "parameters": {
+        "basic.to_delayed_action_delay_milliseconds": 50
+      },
+      "to": {
+        "key_code": "left_command"
+      },
+      "to_delayed_action": {
+        "to_if_canceled": [
+          {
+            "key_code": "u",
+            "modifiers": []
+          }
+        ]
+      },
+      "to_if_alone": [
+        {
+          "halt": true,
+          "key_code": "u",
+          "modifiers": []
+        }
+      ],
+      "to_if_held_down": [
+        {
+          "halt": true,
+          "key_code": "left_command",
+          "modifiers": ["any"]
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "description": "h = cmd",
+      "from": {
+        "key_code": "h",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "parameters": {
+        "basic.to_delayed_action_delay_milliseconds": 50
+      },
+      "to": {
+        "key_code": "right_command"
+      },
+      "to_delayed_action": {
+        "to_if_canceled": [
+          {
+            "key_code": "j",
+            "modifiers": []
+          }
+        ]
+      },
+      "to_if_alone": [
+        {
+          "halt": true,
+          "key_code": "h",
+          "modifiers": []
+        }
+      ],
+      "to_if_held_down": [
+        {
+          "halt": true,
+          "key_code": "right_command",
+          "modifiers": ["any"]
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "description": "t = option",
+      "from": {
+        "key_code": "t",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "parameters": {
+        "basic.to_delayed_action_delay_milliseconds": 50
+      },
+      "to": {
+        "key_code": "right_option"
+      },
+      "to_delayed_action": {
+        "to_if_canceled": [
+          {
+            "key_code": "t",
+            "modifiers": []
+          }
+        ]
+      },
+      "to_if_alone": [
+        {
+          "halt": true,
+          "key_code": "t",
+          "modifiers": []
+        }
+      ],
+      "to_if_held_down": [
+        {
+          "halt": true,
+          "key_code": "right_option",
+          "modifiers": ["any"]
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "description": "n = control",
+      "from": {
+        "key_code": "n",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "parameters": {
+        "basic.to_delayed_action_delay_milliseconds": 50
+      },
+      "to": {
+        "key_code": "right_control"
+      },
+      "to_delayed_action": {
+        "to_if_canceled": [
+          {
+            "key_code": "n",
+            "modifiers": []
+          }
+        ]
+      },
+      "to_if_alone": [
+        {
+          "halt": true,
+          "key_code": "n",
+          "modifiers": []
+        }
+      ],
+      "to_if_held_down": [
+        {
+          "halt": true,
+          "key_code": "right_control",
+          "modifiers": ["any"]
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "description": "s = shift",
+      "from": {
+        "key_code": "s",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "parameters": {
+        "basic.to_delayed_action_delay_milliseconds": 50
+      },
+      "to": {
+        "key_code": "right_shift"
+      },
+      "to_delayed_action": {
+        "to_if_canceled": [
+          {
+            "key_code": "s",
+            "modifiers": []
+          }
+        ]
+      },
+      "to_if_alone": [
+        {
+          "halt": true,
+          "key_code": "s",
+          "modifiers": []
+        }
+      ],
+      "to_if_held_down": [
+        {
+          "halt": true,
+          "key_code": "right_shift",
+          "modifiers": ["any"]
+        }
+      ],
+      "type": "basic"
+    }
+  ]
+}
