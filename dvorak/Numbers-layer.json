@@ -278,12 +278,13 @@
 
     {
       "from": {
-        "key_code": "j",
-        "modifiers": {
-          "optional": ["any"]
-        }
+        "key_code": "j"
       },
-      "to": [
+      "parameters": {
+        "basic.to_if_alone_timeout_milliseconds": 250,
+        "basic.to_if_held_down_threshold_milliseconds": 50
+      },
+      "to_if_held_down": [
         {
           "set_variable": {
             "name": "j pressed",
@@ -299,26 +300,10 @@
           }
         }
       ],
-      "to_delayed_action": {
-        "to_if_canceled": [
-          {
-            "set_variable": {
-              "name": "j pressed",
-              "value": 0
-            }
-          }
-        ]
-      },
+
       "to_if_alone": [
         {
           "key_code": "j"
-        },
-        {
-          "halt": true,
-          "set_variable": {
-            "name": "j pressed",
-            "value": 0
-          }
         }
       ],
       "type": "basic"

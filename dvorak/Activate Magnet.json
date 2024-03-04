@@ -22,6 +22,28 @@
         }
       ],
       "type": "basic"
+    },
+    {
+      "from": {
+        "modifiers": {
+          "optional": ["any"]
+        },
+        "simultaneous": [
+          {
+            "key_code": "t"
+          },
+          {
+            "key_code": "n"
+          }
+        ]
+      },
+      "to_if_held_down": [
+        {
+          "key_code": "right_option",
+          "modifiers": "right_control"
+        }
+      ],
+      "type": "basic"
     }
   ]
 }
