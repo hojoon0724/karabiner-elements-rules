@@ -4,7 +4,7 @@
     {
       "conditions": [
         {
-          "bundle_identifiers": ["com\\.microsoft\\.VSCode", "com\\.microsoft\\.VSCodeInsiders"],
+          "bundle_identifiers": ["com.microsoft.VSCode"],
           "type": "frontmost_application_if"
         },
         {
@@ -13,6 +13,7 @@
           "value": 1
         }
       ],
+
       "from": {
         "key_code": "grave_accent_and_tilde"
       },
@@ -40,7 +41,7 @@
         }
       },
       "parameters": {
-        "basic.to_delayed_action_delay_milliseconds": 250
+        "basic.to_delayed_action_delay_milliseconds": 160
       },
       "to": [
         {

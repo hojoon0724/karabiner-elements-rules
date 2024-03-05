@@ -1,0 +1,48 @@
+{
+  "description": "Media keys only control Music.",
+  "manipulators": [
+    {
+      "from": {
+        "key_code": "f7"
+      },
+      "to_if_alone": [
+        {
+          "shell_command": "osascript -e 'tell application \"Music\" to back track'"
+        }
+      ],
+      "to_if_held_down": [
+        {
+          "shell_command": "osascript -e 'tell application \"Music\" to rewind'"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "f8"
+      },
+      "to": [
+        {
+          "shell_command": "osascript -e 'tell application \"Music\" to playpause'"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "f9"
+      },
+      "to_if_alone": [
+        {
+          "shell_command": "osascript -e 'tell application \"Music\" to next track'"
+        }
+      ],
+      "to_if_held_down": [
+        {
+          "shell_command": "osascript -e 'tell application \"Music\" to fast forward'"
+        }
+      ],
+      "type": "basic"
+    }
+  ]
+}
