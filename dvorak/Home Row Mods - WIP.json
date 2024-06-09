@@ -1143,6 +1143,116 @@
         }
       ],
       "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [
+          {
+            "key_code": "h"
+          },
+          {
+            "key_code": "t"
+          },
+          {
+            "key_code": "a"
+          }
+        ]
+      },
+      "to_if_held_down": [
+        {
+          "key_code": "right_command",
+          "modifiers": ["right_option"]
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [
+          {
+            "key_code": "h"
+          },
+          {
+            "key_code": "t"
+          },
+          {
+            "key_code": "o"
+          }
+        ]
+      },
+      "to_if_held_down": [
+        {
+          "key_code": "right_command",
+          "modifiers": ["right_option"]
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [
+          {
+            "key_code": "h"
+          },
+          {
+            "key_code": "t"
+          },
+          {
+            "key_code": "e"
+          }
+        ]
+      },
+      "to_if_held_down": [
+        {
+          "key_code": "right_command",
+          "modifiers": ["right_option"]
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [
+          {
+            "key_code": "h"
+          },
+          {
+            "key_code": "t"
+          },
+          {
+            "key_code": "u"
+          }
+        ]
+      },
+      "to_if_held_down": [
+        {
+          "key_code": "right_command",
+          "modifiers": ["right_option"]
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [
+          {
+            "key_code": "h"
+          },
+          {
+            "key_code": "t"
+          },
+          {
+            "key_code": "i"
+          }
+        ]
+      },
+      "to_if_held_down": [
+        {
+          "key_code": "right_command",
+          "modifiers": ["right_option"]
+        }
+      ],
+      "type": "basic"
     }
   ]
 }
