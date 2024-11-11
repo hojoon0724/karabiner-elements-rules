@@ -138,7 +138,7 @@
         }
       ],
       "from": {
-        "key_code": "g",
+        "key_code": "f",
         "modifiers": {
           "optional": ["any"]
         }
@@ -160,7 +160,7 @@
         }
       ],
       "from": {
-        "key_code": "r",
+        "key_code": "l",
         "modifiers": {
           "optional": ["any"]
         }
@@ -169,6 +169,48 @@
         {
           "key_code": "close_bracket",
           "modifiers": ["left_command", "left_shift"]
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "conditions": [
+        {
+          "name": "i pressed",
+          "type": "variable_if",
+          "value": 1
+        }
+      ],
+      "from": {
+        "key_code": "g",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "page_up"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "conditions": [
+        {
+          "name": "i pressed",
+          "type": "variable_if",
+          "value": 1
+        }
+      ],
+      "from": {
+        "key_code": "r",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "page_down"
         }
       ],
       "type": "basic"
