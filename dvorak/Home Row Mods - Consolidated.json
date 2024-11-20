@@ -3,45 +3,63 @@
   "manipulators": [
     {
       "from": {
-        "simultaneous": [{ "key_code": "t" }, { "key_code": "h" }, { "key_code": "e" }],
-        "simultaneous_options": { "key_down_order": "strict" }
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "a" }]
       },
-      "to_if_alone": [{ "key_code": "t" }, { "key_code": "h" }, { "key_code": "e" }],
-      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["right_command"] }],
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["left_shift"] }],
       "type": "basic"
     },
     {
       "from": {
-        "simultaneous": [{ "key_code": "a" }, { "key_code": "o" }, { "key_code": "e" }, { "key_code": "u" }]
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "a" }]
       },
-      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["left_command", "left_option", "left_control"] }],
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["left_shift"] }],
       "type": "basic"
     },
     {
       "from": {
-        "simultaneous": [{ "key_code": "a" }, { "key_code": "o" }, { "key_code": "e" }]
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "a" }]
       },
-      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["left_option", "left_control"] }],
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["left_shift"] }],
       "type": "basic"
     },
     {
       "from": {
-        "simultaneous": [{ "key_code": "a" }, { "key_code": "e" }, { "key_code": "u" }]
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "a" }]
       },
-      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["left_command", "left_option"] }],
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["left_shift"] }],
       "type": "basic"
     },
     {
       "from": {
-        "simultaneous": [{ "key_code": "o" }, { "key_code": "e" }, { "key_code": "u" }]
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "a" }]
       },
-      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["left_command", "left_option"] }],
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["left_shift"] }],
       "type": "basic"
     },
     {
       "from": {
-        "simultaneous": [{ "key_code": "a" }, { "key_code": "o" }],
-        "simultaneous_options": { "key_down_order": "strict" }
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "o" }]
       },
       "to_if_alone": [{ "key_code": "a" }, { "key_code": "o" }],
       "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["left_control"] }],
@@ -49,17 +67,55 @@
     },
     {
       "from": {
-        "simultaneous": [{ "key_code": "o" }, { "key_code": "a" }],
-        "simultaneous_options": { "key_down_order": "strict" }
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "o" }]
       },
-      "to_if_alone": [{ "key_code": "o" }, { "key_code": "a" }],
-      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["left_control"] }],
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["left_control"] }],
       "type": "basic"
     },
     {
       "from": {
-        "simultaneous": [{ "key_code": "a" }, { "key_code": "e" }],
-        "simultaneous_options": { "key_down_order": "strict" }
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "e" }]
       },
       "to_if_alone": [{ "key_code": "a" }, { "key_code": "e" }],
       "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["left_option"] }],
@@ -67,35 +123,7 @@
     },
     {
       "from": {
-        "simultaneous": [{ "key_code": "e" }, { "key_code": "a" }],
-        "simultaneous_options": { "key_down_order": "strict" }
-      },
-      "to_if_alone": [{ "key_code": "e" }, { "key_code": "a" }],
-      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["left_option"] }],
-      "type": "basic"
-    },
-    {
-      "from": {
-        "simultaneous": [{ "key_code": "a" }, { "key_code": "u" }],
-        "simultaneous_options": { "key_down_order": "strict" }
-      },
-      "to_if_alone": [{ "key_code": "a" }, { "key_code": "u" }],
-      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["left_command"] }],
-      "type": "basic"
-    },
-    {
-      "from": {
-        "simultaneous": [{ "key_code": "u" }, { "key_code": "a" }],
-        "simultaneous_options": { "key_down_order": "strict" }
-      },
-      "to_if_alone": [{ "key_code": "u" }, { "key_code": "a" }],
-      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["left_command"] }],
-      "type": "basic"
-    },
-    {
-      "from": {
-        "simultaneous": [{ "key_code": "o" }, { "key_code": "e" }],
-        "simultaneous_options": { "key_down_order": "strict" }
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "e" }]
       },
       "to_if_alone": [{ "key_code": "o" }, { "key_code": "e" }],
       "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["left_option"] }],
@@ -103,17 +131,55 @@
     },
     {
       "from": {
-        "simultaneous": [{ "key_code": "e" }, { "key_code": "o" }],
-        "simultaneous_options": { "key_down_order": "strict" }
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "e" }]
       },
-      "to_if_alone": [{ "key_code": "e" }, { "key_code": "o" }],
-      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["left_option"] }],
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["left_option"] }],
       "type": "basic"
     },
     {
       "from": {
-        "simultaneous": [{ "key_code": "o" }, { "key_code": "u" }],
-        "simultaneous_options": { "key_down_order": "strict" }
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "u" }]
       },
       "to_if_alone": [{ "key_code": "o" }, { "key_code": "u" }],
       "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["left_command"] }],
@@ -121,17 +187,7 @@
     },
     {
       "from": {
-        "simultaneous": [{ "key_code": "u" }, { "key_code": "o" }],
-        "simultaneous_options": { "key_down_order": "strict" }
-      },
-      "to_if_alone": [{ "key_code": "u" }, { "key_code": "o" }],
-      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["left_command"] }],
-      "type": "basic"
-    },
-    {
-      "from": {
-        "simultaneous": [{ "key_code": "e" }, { "key_code": "u" }],
-        "simultaneous_options": { "key_down_order": "strict" }
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "u" }]
       },
       "to_if_alone": [{ "key_code": "e" }, { "key_code": "u" }],
       "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["left_command"] }],
@@ -139,11 +195,2953 @@
     },
     {
       "from": {
-        "simultaneous": [{ "key_code": "u" }, { "key_code": "e" }],
-        "simultaneous_options": { "key_down_order": "strict" }
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "u" }]
       },
-      "to_if_alone": [{ "key_code": "u" }, { "key_code": "e" }],
-      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["left_command"] }],
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "o" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "o" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["left_control", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "o" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "o" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["left_control", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "o" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "o" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["left_control", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "o" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "o" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["left_control", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "o" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "o" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["left_control", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "o" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "o" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["left_control", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "e" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "e" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["left_option", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "e" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "e" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["left_option", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "e" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "e" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["left_option", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "e" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "e" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["left_option", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "e" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "e" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["left_option", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "e" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "e" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["left_option", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "u" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "u" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["left_command", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "u" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "u" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["left_command", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "u" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "u" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["left_command", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "u" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "u" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["left_command", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "u" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "u" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["left_command", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "u" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "u" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["left_command", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "h" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "h" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["right_command", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "h" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "h" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["right_command", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "h" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "h" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["right_command", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "h" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "h" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["right_command", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "h" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "h" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["right_command", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "h" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "h" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["right_command", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "t" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "t" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["right_option", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "t" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "t" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["right_option", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "t" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "t" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["right_option", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "t" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "t" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["right_option", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "t" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "t" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["right_option", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "t" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "t" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["right_option", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "n" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "n" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["right_control", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "n" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "n" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["right_control", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "n" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "n" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["right_control", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "n" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "n" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["right_control", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "n" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "n" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["right_control", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "n" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "n" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["right_control", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "s" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "s" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["right_shift", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "s" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "s" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["right_shift", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "s" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "s" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["right_shift", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "s" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "s" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["right_shift", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "s" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "s" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["right_shift", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "s" }, { "key_code": "a" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "s" }, { "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["right_shift", "left_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "a" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "a" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["left_shift", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "a" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "a" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["left_shift", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "a" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "a" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["left_shift", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "a" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "a" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["left_shift", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "a" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "a" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["left_shift", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "a" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "a" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["left_shift", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "e" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "e" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["left_option", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "e" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "e" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["left_option", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "e" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "e" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["left_option", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "e" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "e" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["left_option", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "e" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "e" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["left_option", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "e" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "e" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["left_option", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "u" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "u" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["left_command", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "u" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "u" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["left_command", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "u" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "u" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["left_command", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "u" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "u" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["left_command", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "u" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "u" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["left_command", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "u" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "u" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["left_command", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "h" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "h" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["right_command", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "h" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "h" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["right_command", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "h" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "h" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["right_command", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "h" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "h" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["right_command", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "h" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "h" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["right_command", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "h" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "h" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["right_command", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "t" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "t" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["right_option", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "t" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "t" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["right_option", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "t" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "t" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["right_option", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "t" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "t" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["right_option", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "t" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "t" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["right_option", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "t" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "t" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["right_option", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "n" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "n" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["right_control", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "n" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "n" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["right_control", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "n" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "n" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["right_control", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "n" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "n" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["right_control", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "n" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "n" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["right_control", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "n" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "n" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["right_control", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "s" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "s" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["right_shift", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "s" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "s" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["right_shift", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "s" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "s" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["right_shift", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "s" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "s" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["right_shift", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "s" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "s" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["right_shift", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "s" }, { "key_code": "o" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "s" }, { "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["right_shift", "left_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "a" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "a" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["left_shift", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "a" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "a" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["left_shift", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "a" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "a" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["left_shift", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "a" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "a" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["left_shift", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "a" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "a" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["left_shift", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "a" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "a" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["left_shift", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "o" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "o" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["left_control", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "o" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "o" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["left_control", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "o" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "o" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["left_control", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "o" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "o" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["left_control", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "o" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "o" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["left_control", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "o" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "o" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["left_control", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "u" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "u" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["left_command", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "u" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "u" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["left_command", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "u" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "u" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["left_command", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "u" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "u" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["left_command", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "u" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "u" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["left_command", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "u" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "u" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["left_command", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "h" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "h" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["right_command", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "h" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "h" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["right_command", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "h" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "h" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["right_command", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "h" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "h" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["right_command", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "h" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "h" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["right_command", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "h" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "h" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["right_command", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "t" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "t" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["right_option", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "t" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "t" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["right_option", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "t" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "t" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["right_option", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "t" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "t" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["right_option", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "t" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "t" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["right_option", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "t" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "t" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["right_option", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "n" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "n" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["right_control", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "n" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "n" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["right_control", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "n" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "n" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["right_control", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "n" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "n" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["right_control", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "n" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "n" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["right_control", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "n" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "n" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["right_control", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "s" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "s" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["right_shift", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "s" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "s" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["right_shift", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "s" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "s" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["right_shift", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "s" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "s" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["right_shift", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "s" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "s" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["right_shift", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "s" }, { "key_code": "e" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "s" }, { "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["right_shift", "left_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "a" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "a" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["left_shift", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "a" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "a" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["left_shift", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "a" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "a" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["left_shift", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "a" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "a" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["left_shift", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "a" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "a" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["left_shift", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "a" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "a" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["left_shift", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "o" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "o" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["left_control", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "o" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "o" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["left_control", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "o" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "o" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["left_control", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "o" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "o" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["left_control", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "o" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "o" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["left_control", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "o" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "o" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["left_control", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "e" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "e" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["left_option", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "e" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "e" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["left_option", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "e" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "e" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["left_option", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "e" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "e" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["left_option", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "e" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "e" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["left_option", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "e" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "e" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["left_option", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "h" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "h" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["right_command", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "h" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "h" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["right_command", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "h" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "h" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["right_command", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "h" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "h" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["right_command", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "h" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "h" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["right_command", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "h" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "h" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["right_command", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "t" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "t" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["right_option", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "t" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "t" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["right_option", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "t" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "t" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["right_option", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "t" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "t" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["right_option", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "t" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "t" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["right_option", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "t" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "t" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["right_option", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "n" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "n" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["right_control", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "n" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "n" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["right_control", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "n" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "n" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["right_control", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "n" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "n" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["right_control", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "n" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "n" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["right_control", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "n" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "n" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["right_control", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "s" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "s" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["right_shift", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "s" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "s" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["right_shift", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "s" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "s" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["right_shift", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "s" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "s" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["right_shift", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "s" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "s" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["right_shift", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "s" }, { "key_code": "u" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "s" }, { "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["right_shift", "left_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "a" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "a" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["left_shift", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "a" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "a" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["left_shift", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "a" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "a" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["left_shift", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "a" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "a" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["left_shift", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "a" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "a" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["left_shift", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "a" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "a" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["left_shift", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "o" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "o" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["left_control", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "o" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "o" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["left_control", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "o" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "o" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["left_control", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "o" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "o" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["left_control", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "o" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "o" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["left_control", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "o" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "o" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["left_control", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "e" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "e" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["left_option", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "e" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "e" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["left_option", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "e" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "e" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["left_option", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "e" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "e" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["left_option", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "e" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "e" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["left_option", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "e" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "e" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["left_option", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "u" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "u" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["left_command", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "u" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "u" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["left_command", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "u" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "u" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["left_command", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "u" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "u" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["left_command", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "u" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "u" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["left_command", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "u" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "u" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["left_command", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "t" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "t" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["right_option", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "t" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "t" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["right_option", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "t" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "t" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["right_option", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "t" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "t" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["right_option", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "t" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "t" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["right_option", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "t" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "t" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["right_option", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "n" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "n" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["right_control", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "n" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "n" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["right_control", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "n" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "n" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["right_control", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "n" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "n" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["right_control", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "n" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "n" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["right_control", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "n" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "n" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["right_control", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "s" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "s" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["right_shift", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "s" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "s" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["right_shift", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "s" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "s" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["right_shift", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "s" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "s" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["right_shift", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "s" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "s" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["right_shift", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "s" }, { "key_code": "h" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "s" }, { "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["right_shift", "right_command"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "a" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "a" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["left_shift", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "a" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "a" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["left_shift", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "a" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "a" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["left_shift", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "a" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "a" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["left_shift", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "a" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "a" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["left_shift", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "a" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "a" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["left_shift", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "o" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "o" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["left_control", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "o" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "o" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["left_control", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "o" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "o" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["left_control", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "o" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "o" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["left_control", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "o" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "o" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["left_control", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "o" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "o" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["left_control", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "e" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "e" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["left_option", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "e" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "e" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["left_option", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "e" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "e" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["left_option", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "e" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "e" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["left_option", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "e" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "e" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["left_option", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "e" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "e" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["left_option", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "u" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "u" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["left_command", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "u" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "u" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["left_command", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "u" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "u" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["left_command", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "u" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "u" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["left_command", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "u" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "u" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["left_command", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "u" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "u" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["left_command", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "h" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "h" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["right_command", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "h" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "h" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["right_command", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "h" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "h" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["right_command", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "h" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "h" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["right_command", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "h" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "h" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["right_command", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "h" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "h" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["right_command", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "n" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "n" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["right_control", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "n" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "n" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["right_control", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "n" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "n" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["right_control", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "n" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "n" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["right_control", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "n" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "n" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["right_control", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "n" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "n" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["right_control", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "s" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "s" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["right_shift", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "s" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "s" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["right_shift", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "s" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "s" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["right_shift", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "s" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "s" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["right_shift", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "s" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "s" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["right_shift", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "s" }, { "key_code": "t" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "s" }, { "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["right_shift", "right_option"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "a" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "a" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["left_shift", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "a" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "a" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["left_shift", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "a" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "a" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["left_shift", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "a" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "a" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["left_shift", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "a" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "a" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["left_shift", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "a" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "a" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["left_shift", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "o" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "o" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["left_control", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "o" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "o" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["left_control", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "o" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "o" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["left_control", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "o" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "o" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["left_control", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "o" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "o" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["left_control", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "o" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "o" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["left_control", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "e" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "e" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["left_option", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "e" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "e" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["left_option", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "e" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "e" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["left_option", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "e" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "e" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["left_option", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "e" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "e" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["left_option", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "e" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "e" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["left_option", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "u" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "u" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["left_command", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "u" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "u" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["left_command", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "u" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "u" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["left_command", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "u" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "u" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["left_command", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "u" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "u" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["left_command", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "u" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "u" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["left_command", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "h" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "h" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["right_command", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "h" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "h" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["right_command", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "h" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "h" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["right_command", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "h" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "h" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["right_command", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "h" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "h" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["right_command", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "h" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "h" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["right_command", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "t" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "t" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["right_option", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "t" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "t" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["right_option", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "t" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "t" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["right_option", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "t" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "t" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["right_option", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "t" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "t" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["right_option", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "s" }, { "key_code": "t" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "s" }, { "key_code": "t" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["right_option", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "s" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "s" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["right_shift", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "s" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "s" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["right_shift", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "s" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "s" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["right_shift", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "s" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "s" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["right_shift", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "s" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "s" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["right_shift", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "s" }, { "key_code": "n" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "s" }, { "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["right_shift", "right_control"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "a" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "a" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["left_shift", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "a" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "a" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["left_shift", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "a" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "a" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["left_shift", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "a" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "a" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["left_shift", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "a" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "a" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["left_shift", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "a" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "a" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["left_shift", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "o" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "o" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["left_control", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "o" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "o" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["left_control", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "o" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "o" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["left_control", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "o" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "o" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["left_control", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "o" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "o" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["left_control", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "o" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "o" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["left_control", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "e" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "e" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["left_option", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "e" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "e" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["left_option", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "e" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "e" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["left_option", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "e" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "e" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["left_option", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "e" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "e" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["left_option", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "e" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "e" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["left_option", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "u" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "u" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["left_command", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "u" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "u" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["left_command", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "u" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "u" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["left_command", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "u" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "u" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["left_command", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "u" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "u" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["left_command", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "u" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "u" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["left_command", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "h" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "h" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["right_command", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "h" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "h" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["right_command", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "h" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "h" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["right_command", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "h" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "h" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["right_command", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "h" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "h" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["right_command", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "h" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "h" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["right_command", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "t" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "t" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["right_option", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "t" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "t" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["right_option", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "t" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "t" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["right_option", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "t" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "t" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["right_option", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "t" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "t" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["right_option", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "t" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "n" }, { "key_code": "t" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["right_option", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "n" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "a" }, { "key_code": "n" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["right_control", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "o" }, { "key_code": "n" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "o" }, { "key_code": "n" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "left_control", "modifiers": ["right_control", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "e" }, { "key_code": "n" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "e" }, { "key_code": "n" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "left_option", "modifiers": ["right_control", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "u" }, { "key_code": "n" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "u" }, { "key_code": "n" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "left_command", "modifiers": ["right_control", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "h" }, { "key_code": "n" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "h" }, { "key_code": "n" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "right_command", "modifiers": ["right_control", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "t" }, { "key_code": "n" }, { "key_code": "s" }]
+      },
+      "to_if_alone": [{ "key_code": "t" }, { "key_code": "n" }, { "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["right_control", "right_shift"] }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "o" }, { "key_code": "e" }, { "key_code": "u" }]
+      },
+      "to_if_held_down": [{ "key_code": "left_shift", "modifiers": ["left_command", "left_option", "left_control"] }],
       "type": "basic"
     },
     {
@@ -169,10 +3167,7 @@
     },
     {
       "from": { "key_code": "u" },
-      "to_delayed_action": {
-        "to_if_canceled": [{ "halt": true, "key_code": "u" }],
-        "to_if_invoked": [{ "key_code": "vk_none" }]
-      },
+      "to_delayed_action": { "to_if_canceled": [{ "key_code": "u" }], "to_if_invoked": [{ "key_code": "vk_none" }] },
       "to_if_alone": [{ "halt": true, "key_code": "u" }],
       "to_if_held_down": [{ "halt": true, "key_code": "left_command" }],
       "type": "basic"
@@ -182,135 +3177,6 @@
         "simultaneous": [{ "key_code": "h" }, { "key_code": "t" }, { "key_code": "n" }, { "key_code": "s" }]
       },
       "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["right_command", "right_option", "right_control"] }],
-      "type": "basic"
-    },
-    {
-      "from": {
-        "simultaneous": [{ "key_code": "s" }, { "key_code": "n" }, { "key_code": "t" }]
-      },
-      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["right_option", "right_control"] }],
-      "type": "basic"
-    },
-    {
-      "from": {
-        "simultaneous": [{ "key_code": "s" }, { "key_code": "t" }, { "key_code": "h" }]
-      },
-      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["right_command", "right_option"] }],
-      "type": "basic"
-    },
-    {
-      "from": {
-        "simultaneous": [{ "key_code": "n" }, { "key_code": "t" }, { "key_code": "h" }]
-      },
-      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["right_command", "right_option"] }],
-      "type": "basic"
-    },
-    {
-      "from": {
-        "simultaneous": [{ "key_code": "s" }, { "key_code": "n" }],
-        "simultaneous_options": { "key_down_order": "strict" }
-      },
-      "to_if_alone": [{ "key_code": "s" }, { "key_code": "n" }],
-      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["right_control"] }],
-      "type": "basic"
-    },
-    {
-      "from": {
-        "simultaneous": [{ "key_code": "n" }, { "key_code": "s" }],
-        "simultaneous_options": { "key_down_order": "strict" }
-      },
-      "to_if_alone": [{ "key_code": "n" }, { "key_code": "s" }],
-      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["right_control"] }],
-      "type": "basic"
-    },
-    {
-      "from": {
-        "simultaneous": [{ "key_code": "s" }, { "key_code": "t" }],
-        "simultaneous_options": { "key_down_order": "strict" }
-      },
-      "to_if_alone": [{ "key_code": "s" }, { "key_code": "t" }],
-      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["right_option"] }],
-      "type": "basic"
-    },
-    {
-      "from": {
-        "simultaneous": [{ "key_code": "t" }, { "key_code": "s" }],
-        "simultaneous_options": { "key_down_order": "strict" }
-      },
-      "to_if_alone": [{ "key_code": "t" }, { "key_code": "s" }],
-      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["right_option"] }],
-      "type": "basic"
-    },
-    {
-      "from": {
-        "simultaneous": [{ "key_code": "s" }, { "key_code": "h" }],
-        "simultaneous_options": { "key_down_order": "strict" }
-      },
-      "to_if_alone": [{ "key_code": "s" }, { "key_code": "h" }],
-      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["right_command"] }],
-      "type": "basic"
-    },
-    {
-      "from": {
-        "simultaneous": [{ "key_code": "h" }, { "key_code": "s" }],
-        "simultaneous_options": { "key_down_order": "strict" }
-      },
-      "to_if_alone": [{ "key_code": "h" }, { "key_code": "s" }],
-      "to_if_held_down": [{ "key_code": "right_shift", "modifiers": ["right_command"] }],
-      "type": "basic"
-    },
-    {
-      "from": {
-        "simultaneous": [{ "key_code": "n" }, { "key_code": "t" }],
-        "simultaneous_options": { "key_down_order": "strict" }
-      },
-      "to_if_alone": [{ "key_code": "n" }, { "key_code": "t" }],
-      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["right_option"] }],
-      "type": "basic"
-    },
-    {
-      "from": {
-        "simultaneous": [{ "key_code": "t" }, { "key_code": "n" }],
-        "simultaneous_options": { "key_down_order": "strict" }
-      },
-      "to_if_alone": [{ "key_code": "t" }, { "key_code": "n" }],
-      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["right_option"] }],
-      "type": "basic"
-    },
-    {
-      "from": {
-        "simultaneous": [{ "key_code": "n" }, { "key_code": "h" }],
-        "simultaneous_options": { "key_down_order": "strict" }
-      },
-      "to_if_alone": [{ "key_code": "n" }, { "key_code": "h" }],
-      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["right_command"] }],
-      "type": "basic"
-    },
-    {
-      "from": {
-        "simultaneous": [{ "key_code": "h" }, { "key_code": "n" }],
-        "simultaneous_options": { "key_down_order": "strict" }
-      },
-      "to_if_alone": [{ "key_code": "h" }, { "key_code": "n" }],
-      "to_if_held_down": [{ "key_code": "right_control", "modifiers": ["right_command"] }],
-      "type": "basic"
-    },
-    {
-      "from": {
-        "simultaneous": [{ "key_code": "t" }, { "key_code": "h" }],
-        "simultaneous_options": { "key_down_order": "strict" }
-      },
-      "to_if_alone": [{ "key_code": "t" }, { "key_code": "h" }],
-      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["right_command"] }],
-      "type": "basic"
-    },
-    {
-      "from": {
-        "simultaneous": [{ "key_code": "h" }, { "key_code": "t" }],
-        "simultaneous_options": { "key_down_order": "strict" }
-      },
-      "to_if_alone": [{ "key_code": "h" }, { "key_code": "t" }],
-      "to_if_held_down": [{ "key_code": "right_option", "modifiers": ["right_command"] }],
       "type": "basic"
     },
     {
