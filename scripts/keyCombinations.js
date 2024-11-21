@@ -1,37 +1,127 @@
 const fs = require("fs").promises;
-const { write } = require("fs");
-const path = require("path");
 
-const twoKeyCombinations = ["oa", "ea", "ua", "ha", "ta", "na", "sa", "ao", "eo", "uo", "ho", "to", "no", "so", "ae", "oe", "ue", "he", "te", "ne", "se", "au", "ou", "eu", "hu", "tu", "nu", "su", "ah", "oh", "eh", "uh", "th", "nh", "sh", "at", "ot", "et", "ut", "ht", "nt", "st", "an", "on", "en", "un", "hn", "tn", "sn", "as", "os", "es", "us", "hs", "ts", "ns"];
+const singlesAndQuadRules = [
+  {
+    from: {
+      simultaneous: [{ key_code: "a" }, { key_code: "o" }, { key_code: "e" }, { key_code: "u" }],
+    },
+    to_if_held_down: [{ key_code: "left_shift", modifiers: ["left_command", "left_option", "left_control"] }],
+    type: "basic",
+  },
+  {
+    from: { key_code: "a" },
+    to_delayed_action: { to_if_canceled: [{ key_code: "a" }], to_if_invoked: [{ key_code: "vk_none" }] },
+    to_if_alone: [{ halt: true, key_code: "a" }],
+    to_if_held_down: [{ halt: true, key_code: "left_shift" }],
+    type: "basic",
+  },
+  {
+    from: { key_code: "o" },
+    to_delayed_action: { to_if_canceled: [{ key_code: "o" }], to_if_invoked: [{ key_code: "vk_none" }] },
+    to_if_alone: [{ halt: true, key_code: "o" }],
+    to_if_held_down: [{ halt: true, key_code: "left_control" }],
+    type: "basic",
+  },
+  {
+    from: { key_code: "e" },
+    to_delayed_action: { to_if_canceled: [{ key_code: "e" }], to_if_invoked: [{ key_code: "vk_none" }] },
+    to_if_alone: [{ halt: true, key_code: "e" }],
+    to_if_held_down: [{ halt: true, key_code: "left_option" }],
+    type: "basic",
+  },
+  {
+    from: { key_code: "u" },
+    to_delayed_action: { to_if_canceled: [{ key_code: "u" }], to_if_invoked: [{ key_code: "vk_none" }] },
+    to_if_alone: [{ halt: true, key_code: "u" }],
+    to_if_held_down: [{ halt: true, key_code: "left_command" }],
+    type: "basic",
+  },
+  {
+    from: {
+      simultaneous: [{ key_code: "h" }, { key_code: "t" }, { key_code: "n" }, { key_code: "s" }],
+    },
+    to_if_held_down: [{ key_code: "right_shift", modifiers: ["right_command", "right_option", "right_control"] }],
+    type: "basic",
+  },
+  {
+    from: { key_code: "h" },
+    to_delayed_action: { to_if_canceled: [{ key_code: "h" }], to_if_invoked: [{ key_code: "vk_none" }] },
+    to_if_alone: [{ halt: true, key_code: "h" }],
+    to_if_held_down: [{ halt: true, key_code: "right_command" }],
+    type: "basic",
+  },
+  {
+    from: { key_code: "t" },
+    to_delayed_action: { to_if_canceled: [{ key_code: "t" }], to_if_invoked: [{ key_code: "vk_none" }] },
+    to_if_alone: [{ halt: true, key_code: "t" }],
+    to_if_held_down: [{ halt: true, key_code: "right_option" }],
+    type: "basic",
+  },
+  {
+    from: { key_code: "n" },
+    to_delayed_action: { to_if_canceled: [{ key_code: "n" }], to_if_invoked: [{ key_code: "vk_none" }] },
+    to_if_alone: [{ halt: true, key_code: "n" }],
+    to_if_held_down: [{ halt: true, key_code: "right_control" }],
+    type: "basic",
+  },
+  {
+    from: { key_code: "s" },
+    to_delayed_action: { to_if_canceled: [{ key_code: "s" }], to_if_invoked: [{ key_code: "vk_none" }] },
+    to_if_alone: [{ halt: true, key_code: "s" }],
+    to_if_held_down: [{ halt: true, key_code: "right_shift" }],
+    type: "basic",
+  },
+];
 
-const threeKeyCombinations = ["eoa", "uoa", "hoa", "toa", "noa", "soa", "oea", "uea", "hea", "tea", "nea", "sea", "oua", "eua", "hua", "tua", "nua", "sua", "oha", "eha", "uha", "tha", "nha", "sha", "ota", "eta", "uta", "hta", "nta", "sta", "ona", "ena", "una", "hna", "tna", "sna", "osa", "esa", "usa", "hsa", "tsa", "nsa", "eao", "uao", "hao", "tao", "nao", "sao", "aeo", "ueo", "heo", "teo", "neo", "seo", "auo", "euo", "huo", "tuo", "nuo", "suo", "aho", "eho", "uho", "tho", "nho", "sho", "ato", "eto", "uto", "hto", "nto", "sto", "ano", "eno", "uno", "hno", "tno", "sno", "aso", "eso", "uso", "hso", "tso", "nso", "oae", "uae", "hae", "tae", "nae", "sae", "aoe", "uoe", "hoe", "toe", "noe", "soe", "aue", "oue", "hue", "tue", "nue", "sue", "ahe", "ohe", "uhe", "the", "nhe", "she", "ate", "ote", "ute", "hte", "nte", "ste", "ane", "one", "une", "hne", "tne", "sne", "ase", "ose", "use", "hse", "tse", "nse", "oau", "eau", "hau", "tau", "nau", "sau", "aou", "eou", "hou", "tou", "nou", "sou", "aeu", "oeu", "heu", "teu", "neu", "seu", "ahu", "ohu", "ehu", "thu", "nhu", "shu", "atu", "otu", "etu", "htu", "ntu", "stu", "anu", "onu", "enu", "hnu", "tnu", "snu", "asu", "osu", "esu", "hsu", "tsu", "nsu", "oah", "eah", "uah", "tah", "nah", "sah", "aoh", "eoh", "uoh", "toh", "noh", "soh", "aeh", "oeh", "ueh", "teh", "neh", "seh", "auh", "ouh", "euh", "tuh", "nuh", "suh", "ath", "oth", "eth", "uth", "nth", "sth", "anh", "onh", "enh", "unh", "tnh", "snh", "ash", "osh", "esh", "ush", "tsh", "nsh", "oat", "eat", "uat", "hat", "nat", "sat", "aot", "eot", "uot", "hot", "not", "sot", "aet", "oet", "uet", "het", "net", "set", "aut", "out", "eut", "hut", "nut", "sut", "aht", "oht", "eht", "uht", "nht", "sht", "ant", "ont", "ent", "unt", "hnt", "snt", "ast", "ost", "est", "ust", "hst", "nst", "oan", "ean", "uan", "han", "tan", "san", "aon", "eon", "uon", "hon", "ton", "son", "aen", "oen", "uen", "hen", "ten", "sen", "aun", "oun", "eun", "hun", "tun", "sun", "ahn", "ohn", "ehn", "uhn", "thn", "shn", "atn", "otn", "etn", "utn", "htn", "stn", "asn", "osn", "esn", "usn", "hsn", "tsn", "oas", "eas", "uas", "has", "tas", "nas", "aos", "eos", "uos", "hos", "tos", "nos", "aes", "oes", "ues", "hes", "tes", "nes", "aus", "ous", "eus", "hus", "tus", "nus", "ahs", "ohs", "ehs", "uhs", "ths", "nhs", "ats", "ots", "ets", "uts", "hts", "nts", "ans", "ons", "ens", "uns", "hns", "tns"];
+const letters = ["a", "o", "e", "u", "h", "t", "n", "s"];
 
-const keyMapped = {
-  a: "left_shift",
-  o: "left_control",
-  e: "left_option",
-  u: "left_command",
-  s: "right_shift",
-  n: "right_control",
-  t: "right_option",
-  h: "right_command",
-};
+function createTwoLetterCombos(arr) {
+  let combinationsArr = [];
+  letters.map((letter1) => {
+    letters.map((letter2) => {
+      if (letter1 !== letter2) {
+        combinationsArr.push(letter1.concat(letter2));
+      }
+    });
+  });
 
-const keyAssignmentMap = new Map();
+  return combinationsArr;
+}
+
+function createThreeLetterCombos(arr) {
+  let combinationsArr = [];
+  arr.map((letter1) => {
+    arr.map((letter2) => {
+      arr.map((letter3) => {
+        if (letter1 !== letter2 && letter2 !== letter3 && letter1 !== letter3) {
+          combinationsArr.push(letter1.concat(letter2).concat(letter3));
+        }
+      });
+    });
+  });
+
+  return combinationsArr;
+}
+
+const twoLettersArr = createTwoLetterCombos(letters);
+const threeLettersArr = createThreeLetterCombos(letters);
+
+const keyAssignmentMap = new Map([
+  ["a", "left_shift"],
+  ["o", "left_control"],
+  ["e", "left_option"],
+  ["u", "left_command"],
+  ["s", "right_shift"],
+  ["n", "right_control"],
+  ["t", "right_option"],
+  ["h", "right_command"],
+]);
 
 const destinationFile = "./scriptGeneratedCombinations.json";
 
 function writeToFile(destinationFile, content) {
   fs.writeFile(destinationFile, JSON.stringify(content, null, 2));
 }
-
-function createKeyMap(obj) {
-  Object.entries(obj).map((entry) => {
-    keyAssignmentMap.set(entry[0], entry[1]);
-  });
-}
-
-createKeyMap(keyMapped);
 
 function createKeyCombinationRule(str) {
   const strArr = str.split("");
@@ -47,7 +137,6 @@ function createKeyCombinationRule(str) {
 
   for (i = 0; i < strArr.length; i++) {
     if (i === 0) {
-      // let keyCodeZero = { key_code: keyAssignmentMap.get(strArr[i]) };
       toIfHeldDown.push({ key_code: keyAssignmentMap.get(strArr[i]) });
     } else {
       modifiersArr.push(keyAssignmentMap.get(strArr[i]));
@@ -77,20 +166,6 @@ function processKeyCombinationArr(arr) {
   return rules;
 }
 
-let compiledRules = [...processKeyCombinationArr(twoKeyCombinations), ...processKeyCombinationArr(threeKeyCombinations)];
-
-// compiledRules.push(processKeyCombinationArr(twoKeyCombinations));
-// compiledRules.push(processKeyCombinationArr(threeKeyCombinations));
+let compiledRules = [...singlesAndQuadRules, ...processKeyCombinationArr(twoLettersArr), ...processKeyCombinationArr(threeLettersArr)];
 
 writeToFile(destinationFile, compiledRules);
-
-// const resultArr = allKeyCombinations.map((letters) => {
-//   letterArr = letters.split("");
-//   console.log(letters);
-//   letterArr.forEach((letter) => {
-//     console.log(letter, keyMapped[letter]);
-//   });
-// });
-
-// console.log(allKeyCombinations);
-// console.log(allKeyCombinations.length);

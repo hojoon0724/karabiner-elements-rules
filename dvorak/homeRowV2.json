@@ -1,0 +1,61 @@
+{
+  "description": "Home row keys act as modifiers when held",
+  "manipulators": [
+    {
+      "from": {
+        "key_code": "a"
+      },
+      "to_if_held_down": [{ "key_code": "left_shift" }],
+      "to_if_alone": [{ "key_code": "a" }]
+    },
+    {
+      "from": {
+        "key_code": "o"
+      },
+      "to_if_held_down": [{ "key_code": "left_control" }],
+      "to_if_alone": [{ "key_code": "o" }]
+    },
+    {
+      "from": {
+        "key_code": "e"
+      },
+      "to_if_held_down": [{ "key_code": "left_option" }],
+      "to_if_alone": [{ "key_code": "e" }]
+    },
+    {
+      "from": {
+        "key_code": "u"
+      },
+      "to_if_held_down": [{ "key_code": "left_command" }],
+      "to_if_alone": [{ "key_code": "u" }]
+    },
+    {
+      "from": {
+        "key_code": "s"
+      },
+      "to_if_held_down": [{ "key_code": "right_shift" }],
+      "to_if_alone": [{ "key_code": "s" }]
+    },
+    {
+      "from": {
+        "key_code": "n"
+      },
+      "to_if_held_down": [{ "key_code": "right_control" }],
+      "to_if_alone": [{ "key_code": "n" }]
+    },
+    {
+      "from": {
+        "key_code": "t"
+      },
+      "to_if_held_down": [{ "key_code": "right_option" }],
+      "to_if_alone": [{ "key_code": "t" }]
+    },
+    {
+      "from": {
+        "key_code": "h"
+      },
+      "to_if_held_down": [{ "key_code": "right_command" }],
+      "to_if_alone": [{ "key_code": "h" }]
+    }
+  ]
+}
