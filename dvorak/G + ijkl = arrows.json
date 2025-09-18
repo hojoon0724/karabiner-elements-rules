@@ -75,14 +75,11 @@
       "from": { "key_code": "i" },
       "parameters": {
         "basic.to_if_alone_timeout_milliseconds": 250,
-        "basic.to_if_held_down_threshold_milliseconds": 50
+        "basic.to_if_held_down_threshold_milliseconds": 100
       },
       "to_after_key_up": [{ "set_variable": { "name": "i pressed", "value": 0 } }],
-      "to_delayed_action": {
-        "to_if_invoked": [{ "set_variable": { "name": "command-q", "value": 0 } }]
-      },
-      "to_if_alone": [{ "key_code": "i" }],
       "to_if_held_down": [{ "set_variable": { "name": "i pressed", "value": 1 } }],
+      "to_if_alone": [{ "key_code": "i" }],
       "type": "basic"
     }
   ]

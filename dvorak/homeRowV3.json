@@ -1,0 +1,148 @@
+{
+  "description": "Home row mods with correct key roll behavior",
+  "manipulators": [
+    {
+      "description": "a: shift when held, a when tapped",
+      "from": { "key_code": "a", "modifiers": { "optional": ["any"] } },
+      "to": [{ "set_variable": { "name": "a_pressed", "value": 1 } }],
+      "to_if_alone": [{ "key_code": "a" }],
+      "to_if_held_down": [{ "key_code": "left_shift" }],
+      "to_after_key_up": [{ "set_variable": { "name": "a_pressed", "value": 0 } }],
+      "parameters": { "basic.to_if_held_down_threshold_milliseconds": 200 },
+      "type": "basic"
+    },
+    {
+      "description": "Emit 'a' on roll",
+      "from": { "key_code": "a", "modifiers": { "optional": ["any"] } },
+      "conditions": [{ "type": "variable_if", "name": "a_pressed", "value": 1 }],
+      "to": [{ "set_variable": { "name": "a_pressed", "value": 0 } }, { "key_code": "a" }],
+      "type": "basic"
+    },
+
+    {
+      "description": "o: control when held, o when tapped",
+      "from": { "key_code": "o", "modifiers": { "optional": ["any"] } },
+      "to": [{ "set_variable": { "name": "o_pressed", "value": 1 } }],
+      "to_if_alone": [{ "key_code": "o" }],
+      "to_if_held_down": [{ "key_code": "left_control" }],
+      "to_after_key_up": [{ "set_variable": { "name": "o_pressed", "value": 0 } }],
+      "parameters": { "basic.to_if_held_down_threshold_milliseconds": 200 },
+      "type": "basic"
+    },
+    {
+      "description": "Emit 'o' on roll",
+      "from": { "key_code": "o", "modifiers": { "optional": ["any"] } },
+      "conditions": [{ "type": "variable_if", "name": "o_pressed", "value": 1 }],
+      "to": [{ "set_variable": { "name": "o_pressed", "value": 0 } }, { "key_code": "o" }],
+      "type": "basic"
+    },
+
+    {
+      "description": "e: option when held, e when tapped",
+      "from": { "key_code": "e", "modifiers": { "optional": ["any"] } },
+      "to": [{ "set_variable": { "name": "e_pressed", "value": 1 } }],
+      "to_if_alone": [{ "key_code": "e" }],
+      "to_if_held_down": [{ "key_code": "left_option" }],
+      "to_after_key_up": [{ "set_variable": { "name": "e_pressed", "value": 0 } }],
+      "parameters": { "basic.to_if_held_down_threshold_milliseconds": 200 },
+      "type": "basic"
+    },
+    {
+      "description": "Emit 'e' on roll",
+      "from": { "key_code": "e", "modifiers": { "optional": ["any"] } },
+      "conditions": [{ "type": "variable_if", "name": "e_pressed", "value": 1 }],
+      "to": [{ "set_variable": { "name": "e_pressed", "value": 0 } }, { "key_code": "e" }],
+      "type": "basic"
+    },
+
+    {
+      "description": "u: command when held, u when tapped",
+      "from": { "key_code": "u", "modifiers": { "optional": ["any"] } },
+      "to": [{ "set_variable": { "name": "u_pressed", "value": 1 } }],
+      "to_if_alone": [{ "key_code": "u" }],
+      "to_if_held_down": [{ "key_code": "left_command" }],
+      "to_after_key_up": [{ "set_variable": { "name": "u_pressed", "value": 0 } }],
+      "parameters": { "basic.to_if_held_down_threshold_milliseconds": 200 },
+      "type": "basic"
+    },
+    {
+      "description": "Emit 'u' on roll",
+      "from": { "key_code": "u", "modifiers": { "optional": ["any"] } },
+      "conditions": [{ "type": "variable_if", "name": "u_pressed", "value": 1 }],
+      "to": [{ "set_variable": { "name": "u_pressed", "value": 0 } }, { "key_code": "u" }],
+      "type": "basic"
+    },
+
+    {
+      "description": "h: command when held, h when tapped",
+      "from": { "key_code": "h", "modifiers": { "optional": ["any"] } },
+      "to": [{ "set_variable": { "name": "h_pressed", "value": 1 } }],
+      "to_if_alone": [{ "key_code": "h" }],
+      "to_if_held_down": [{ "key_code": "right_command" }],
+      "to_after_key_up": [{ "set_variable": { "name": "h_pressed", "value": 0 } }],
+      "parameters": { "basic.to_if_held_down_threshold_milliseconds": 200 },
+      "type": "basic"
+    },
+    {
+      "description": "Emit 'h' on roll",
+      "from": { "key_code": "h", "modifiers": { "optional": ["any"] } },
+      "conditions": [{ "type": "variable_if", "name": "h_pressed", "value": 1 }],
+      "to": [{ "set_variable": { "name": "h_pressed", "value": 0 } }, { "key_code": "h" }],
+      "type": "basic"
+    },
+
+    {
+      "description": "t: option when held, t when tapped",
+      "from": { "key_code": "t", "modifiers": { "optional": ["any"] } },
+      "to": [{ "set_variable": { "name": "t_pressed", "value": 1 } }],
+      "to_if_alone": [{ "key_code": "t" }],
+      "to_if_held_down": [{ "key_code": "right_option" }],
+      "to_after_key_up": [{ "set_variable": { "name": "t_pressed", "value": 0 } }],
+      "parameters": { "basic.to_if_held_down_threshold_milliseconds": 200 },
+      "type": "basic"
+    },
+    {
+      "description": "Emit 't' on roll",
+      "from": { "key_code": "t", "modifiers": { "optional": ["any"] } },
+      "conditions": [{ "type": "variable_if", "name": "t_pressed", "value": 1 }],
+      "to": [{ "set_variable": { "name": "t_pressed", "value": 0 } }, { "key_code": "t" }],
+      "type": "basic"
+    },
+
+    {
+      "description": "n: control when held, n when tapped",
+      "from": { "key_code": "n", "modifiers": { "optional": ["any"] } },
+      "to": [{ "set_variable": { "name": "n_pressed", "value": 1 } }],
+      "to_if_alone": [{ "key_code": "n" }],
+      "to_if_held_down": [{ "key_code": "right_control" }],
+      "to_after_key_up": [{ "set_variable": { "name": "n_pressed", "value": 0 } }],
+      "parameters": { "basic.to_if_held_down_threshold_milliseconds": 200 },
+      "type": "basic"
+    },
+    {
+      "description": "Emit 'n' on roll",
+      "from": { "key_code": "n", "modifiers": { "optional": ["any"] } },
+      "conditions": [{ "type": "variable_if", "name": "n_pressed", "value": 1 }],
+      "to": [{ "set_variable": { "name": "n_pressed", "value": 0 } }, { "key_code": "n" }],
+      "type": "basic"
+    },
+
+    {
+      "description": "s: shift when held, s when tapped",
+      "from": { "key_code": "s", "modifiers": { "optional": ["any"] } },
+      "to": [{ "set_variable": { "name": "s_pressed", "value": 1 } }],
+      "to_if_alone": [{ "key_code": "s" }],
+      "to_if_held_down": [{ "key_code": "right_shift" }],
+      "to_after_key_up": [{ "set_variable": { "name": "s_pressed", "value": 0 } }],
+      "parameters": { "basic.to_if_held_down_threshold_milliseconds": 200 },
+      "type": "basic"
+    },
+    {
+      "description": "Emit 's' on roll",
+      "from": { "key_code": "s", "modifiers": { "optional": ["any"] } },
+      "conditions": [{ "type": "variable_if", "name": "s_pressed", "value": 1 }],
+      "to": [{ "set_variable": { "name": "s_pressed", "value": 0 } }, { "key_code": "s" }],
+      "type": "basic"
+    }
+  ]
+}
