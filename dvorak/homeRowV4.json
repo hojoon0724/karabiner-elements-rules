@@ -8508,7 +8508,7 @@
 
       "to_if_alone": [{ "key_code": "a" }],
       "to_if_held_down": [{ "key_code": "left_shift", "lazy": true }],
-      "parameters": { "basic.to_if_held_down_threshold_milliseconds": 100 }
+      "parameters": { "basic.to_if_held_down_threshold_milliseconds": 50 }
     }
   ]
 }

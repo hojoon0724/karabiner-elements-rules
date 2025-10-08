@@ -1,0 +1,44 @@
+{
+  "description": "Key roll exception combinations",
+  "enabled": true,
+  "manipulators": [
+    {
+      "type": "basic",
+      "parameters": {
+        "basic.simultaneous_threshold_milliseconds": 250
+      },
+      "from": {
+        "simultaneous": [{ "key_code": "a" }, { "key_code": "slash" }],
+        "simultaneous_options": {
+          "key_down_order": "strict",
+          "detect_key_down_uninterruptedly": true
+        }
+      },
+      "to": [
+        {
+          "key_code": "slash",
+          "modifiers": ["left_shift"]
+        }
+      ]
+    },
+    {
+      "type": "basic",
+      "parameters": {
+        "basic.simultaneous_threshold_milliseconds": 250
+      },
+      "from": {
+        "simultaneous": [{ "key_code": "n" }, { "key_code": "grave_accent_and_tilde" }],
+        "simultaneous_options": {
+          "key_down_order": "strict",
+          "detect_key_down_uninterruptedly": true
+        }
+      },
+      "to": [
+        {
+          "key_code": "grave_accent_and_tilde",
+          "modifiers": ["right_control"]
+        }
+      ]
+    }
+  ]
+}
